@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARDUINO BASE RFID LOCK</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123322969-11"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-123322969-11');
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/rfid/interface.png">
+		</div>
+		
+		<h3>Arduino Base RFID lock System</h3>
+
+		<p>This project i develop is a keyless doorlock using RFID for my thesis.
+		<br>
+		<br>
+		The system can only be access by registering the RFID.
+		
+		<br>
+		<br>
+
+		This is a fully stand alone arduino hardware system.
+		
+		<br>
+		<br>
+		Only the staff of the office and the campus director of the campus can access the system.
+		<br>
+		<br>
+		i work for more than 1 year in this project before selling to my Research Instructor.
+		<br>
+		<br>
+		
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Arduino IDEs</li>
+			<li>- Fritzing</li>
+			<li>- C++</li>			
+		</ul>
+
+
+		<h5>HARDWARE CONFIGURATION</h5>
+		<div class="img-container">
+			<img src="images/rfid/HWC.jpg">
+		</div>
+
+		<h6>FINAL INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid/interface.png">
+		</div>
+
+		<h3>Characteristics of the system</h3>
+
+		<p>To start the process of the system the admin of the system must have a unique <br><br>
+		card and it will serve as the master key. To registrar the RFID the admin of the <br><br>
+		 system must tap the master key to the RFID scanner and the LCD text will be program <br><br>
+		  made Add/Remove a tag. Once the user tap the RFID tag will be added to the database <br><br>
+		   LCD text will be Tag added, however if the user taps the already registered tag  <br><br>
+		   during the program mode the Arduino program will delate the tag and the LCD text <br><br>
+		    will be tag removes. To start the process of unlocking the door the user will <br><br>
+		    tap the RFID card to the scanner, and it will send a signal to the Arduino to <br><br>
+		    determine if it required , and if it is registered the LCD test will be access <br><br>
+		     granted the green LED will lights up the Buzzer will beep and the servo motor <br><br>
+		      will rotate, when the user is already inside the office there are two buttons  <br><br>
+		      near at the door and the red button serve as unlocking the door and the blue  <br><br>
+		      button is unlock the door however if the user will tap an unregistered the same <br><br>
+		       process will be occurred 
+		<br>
+
+		
+	</div>
+
+</body>
+</html>

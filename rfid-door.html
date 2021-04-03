@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARDUINO BASE RFID LOCK WITH VB.NET</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123322969-11"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-123322969-11');
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/rfid-door/hardwc.JPEG">
+		</div>
+		
+		<h3>Arduino Base RFID lock System</h3>
+
+		<p>This project i develop is a keyless doorlock using RFID, arduino and vb.net.
+		<br>
+		<br>
+		unlike the my other door lock project this has a external system that i develop using vb.net
+		<br>
+		<br>
+		unlike my other RFID based door lock, this project has a external system using vb.net where you can register the user and <br><br> track who access the door every time.
+		<br>
+		<br>
+		i work for 4 months in this project before giving this to my client.
+		<br>
+		<br>
+		</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Arduino IDEs</li>
+			<li>- Fritzing</li>
+			<li>- C++</li>			
+		</ul>
+
+
+		<h5>HARDWARE CONFIGURATION</h5>
+		<div class="img-container">
+			<img src="images/rfid/HWC.JPG">
+			<video width="480" height="320" controls>
+ 			 <source src="images/rfid-door/scan.mp4" type="video/mp4">
+</video>
+		</div>
+
+		<h6>CONNECTION INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid-door/connection.JPG">
+			<br>
+			<p>
+				Here is the connection interface where you connect the Arduino <br><br> hardware. The connection status will say connected if we <br><br> connect to the arduino port and the baud rate. 
+			</p>
+		</div>
+		<br>
+
+		<h6>USER DATA INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid-door/userdata-0.JPG">
+			<br>
+			<p>
+				Here is the user data interface where after you scan the RFID <br><br> tag to the RFID scanner we will know if that  tag is registered <br><br> or not. 
+			</p>
+		</div>
+		<br>
+
+		<h6>USER DATA INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid-door/userdata.JPG">
+			<br>
+			<video width="480" height="320" controls>
+ 			 <source src="images/rfid-door/reg.mp4" type="video/mp4">
+			<p>
+				Here is the example of the registered tag scan to the RFID <br><br> canner, the arduino will prompt the green light the buzz will <br><br>  beep and the LCD text will say door open meaning he or  <br><br> she is registered and will automatically unlock the door.
+			</p>
+		</div>
+		<br>
+
+		<h6>USER DATA INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid-door/userdata-1.JPG">
+			<br>
+			<video width="480" height="320" controls>
+ 			 <source src="images/rfid-door/unre.mp4" type="video/mp4">
+			<p>
+				Here is the example of the unregistered tag scan to the RFID <br><br> scanner, the arduino will prompt the red light, the buzzer <br><br> will buzz so loud and the LCD text will say door close <br><br> meaning he is not registered, or his data has been  deleted and <br><br> the door will remain lock.
+			</p>
+		</div>
+		<br>
+
+		<h6>HISTORY LOGS INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid-door/logs.JPG">
+			<br>
+			<p>
+				Here is the history logs of the system where the administrator <br><br> can see who access the door. The administrator can also search <br><br> who access the door whatever the date he or she wants to <br><br> search, the administrator can also search the <br><br> name of the person who access the door and <br><br>they will know what day and what time the person access the <br><br>door.
+			</p>
+		</div>
+		<br>
+
+		<h6>REGISTRATION INTERFACE</h5>
+		<div class="img-container">
+			<img src="images/rfid-door/data.JPG">
+			<br>
+			<p>
+				Here is the registration data where the administrator can <br><br> register data for the user and edit the data of the  user. The<br><br> admininstrator can also see if the data already registered or  <br><br>not by searching the name or scanning the RFID tag.
+			</p>
+		</div>
+		<br>
+
+		<h3>Characteristics of the system</h3>
+		<p>
+			To start the process of the system the administator will connect the arduino <br><br>
+			to the software i develop and scan the ports and the baud rate of the arduino <br><br>
+			Once it is connected we can now access the Arduino using the software i develop <br><br>
+			In order for the user to access the administrator will register his or her data <br><br>
+			and the RFID tag after the administrator register the user's data. <br><br> 
+		    The user will only scan the RFID tag to the scanner and the system will scanner<br><br>
+			scanner and the system will check if that data is registered or not <br><br>
+			If it is registered the the green light will prompt and the buzzer will beep <br><br>
+			the LCD text will say door open and the door will now unlock and it will be <br><br>
+			lock after the short period of time or the user will lock it in the other side of <br><br>
+			the door by pressing the push button<br><br>
+			If it is not registered the red light will prompt and the buzzer will buzz <br><br>
+			so loud and the LCD text will say door close and the door will remian<br><br>
+			lock because the user is not yet registered or the user's data has been deleted <br><br>
+			The administrator can track who access to the door in the history logs <br><br>
+
+		</p>
+
+		
+		<br>
+
+		
+	</div>
+
+</body>
+</html>
